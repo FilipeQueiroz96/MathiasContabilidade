@@ -25,12 +25,12 @@ nav{
     width: 95vw;
     justify-content: end;
     align-items: center;
-    margin-right: 15%;
+    margin-right: 8%;
 }
 
 .menu-nav>li{
     list-style-type: none;
-    margin: 0 3%;
+    margin: 0 2.2%;
 }
 
 .menu-nav>li>a{
@@ -63,3 +63,55 @@ nav{
 
 
 
+.doisbotoes{
+    margin-left: 15%;
+    padding-bottom: 100px;
+}
+
+.saibacomo{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 30px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 37px;
+    background-color: rgb(255, 255, 255);
+}
+
+.whatsapp{
+    text-decoration: none;
+    color: white;
+    padding: 20px 25px 20px 25px;
+    border-radius: 36px;
+    background-color: rgb(87, 87, 87);
+}
+
+
+
+
+
+
+main{
+    display: flex;
+    margin-top: 70px;
+    padding-bottom: 50px;
+}
+
+.sobrenos{
+    margin-left:  10%;
+    padding-bottom: 18px;
+    max-width: 300px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.sobrep1, .sobrep2, .sobrep3, .sobrep4{
+    padding: 20px 25% 0 10%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.imgandre{
+    width: 300px;
+    padding-right: 50px;
+    margin-top: 70px;
+}
