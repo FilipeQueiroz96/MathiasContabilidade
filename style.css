@@ -16,8 +16,8 @@ header{
 
 nav{
     display: flex;
-    padding: 0 10% 0 15%;
     background-color: rgb(24, 22, 22);
+    padding: 0 0 0 9%;
 }
 
 .menu-nav{
@@ -25,7 +25,7 @@ nav{
     width: 95vw;
     justify-content: end;
     align-items: center;
-    margin-right: 8%;
+    margin-right: 10%;
 }
 
 .menu-nav>li{
@@ -38,21 +38,32 @@ nav{
     color: white;
 }
 
-.logo{
+.logos{
+    display: flex;
+    align-items: center;
+}
+.logo-icone{
+    height: 65px;
+}
+.logo-texto{
     width: 150px;
 }
+
+
+
+
 
 .titulo1{
     margin-top: 120px;
     color: white;
-    padding-left: 15%;
+    padding-left: 10%;
     max-width: 400px;
     text-align: center;
 }
 
 .p1{
     color: white;
-    padding-left: 15%;
+    padding-left: 10%;
     margin-top: 40px;
     font-size:  22px;
     max-width: 500px;
@@ -64,7 +75,7 @@ nav{
 
 
 .doisbotoes{
-    margin-left: 15%;
+    margin-left: 10%;
     padding-bottom: 100px;
 }
 
@@ -97,21 +108,80 @@ main{
 }
 
 .sobrenos{
-    margin-left:  10%;
+    margin-left:  12%;
     padding-bottom: 18px;
     max-width: 300px;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2.5px solid rgb(0, 0, 0);
 }
 
 .sobrep1, .sobrep2, .sobrep3, .sobrep4{
-    padding: 20px 25% 0 10%;
+    padding: 20px 20% 0 12%;
     font-size: 14px;
     font-weight: 500;
 }
 
+.sessaofoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 70px;
+}
 
 .imgandre{
     width: 300px;
-    padding-right: 50px;
-    margin-top: 70px;
+}
+
+.nome{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fundador{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.sessaoservicos{
+    background-image: url(imagens/fundopreto.jpeg);
+    padding-bottom: 500px;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.tituloservicos{
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid white;
+}
+
+
+
+
+.areaservicos{
+    display: flex;
+    justify-content: space-between;
+}
+.areaservicos>div>p{
+    color: white;
+}
+
+.boxservico{
+    width: 200px;
+    cursor: pointer;
+}
+span{
+    color: white;
+    display: none;
 }
