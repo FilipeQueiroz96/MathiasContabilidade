@@ -78,21 +78,44 @@
         <h4 class="fundador">Fundador</h4>
     </section>
  </main>
-
     <section class="sessaoservicos">
         <h1 class="tituloservicos">Serviços</h1>
         <div class="areaservicos">
-            <div class="boxservico">
+            <div class="elemento" onclick="mostrarSubtexto(1)">
                 <p>Certificado Digital</p>
-                <span class="popup">We are specialists in this field
+                <div class="subtexto" id="subtexto-1">We are specialists in this field
                     with over 100 experiments.
-                    </span>
+                </div>
             </div>
-            <div class="boxservico" >
+            <div class="elemento" onclick="mostrarSubtexto(2)">
                 <p>Endereço Virtual</p>
+                <div class="subtexto" id="subtexto-2">We are specialists in this field
+                    with over 100 experiments.
+                </div>
             </div>
-            <div class="boxservico" >
+            <div class="elemento" onclick="mostrarSubtexto(3)" >
                 <p>APP Mathias Contabilida</p>
+                <div class="subtexto" id="subtexto-3">We are specialists in this field
+                    with over 100 experiments.
+                </div>
+            </div>
+            <div class="elemento" onclick="mostrarSubtexto(4)" >
+                <p>APP Mathias Contabilida</p>
+                <div class="subtexto" id="subtexto-4">We are specialists in this field
+                    with over 100 experiments.
+                </div>
+            </div>
+            <div class="elemento" onclick="mostrarSubtexto(5)" >
+                <p>APP Mathias Contabilida</p>
+                <div class="subtexto" id="subtexto-5">We are specialists in this field
+                    with over 100 experiments.
+                </div>
+            </div>
+            <div class="elemento" onclick="mostrarSubtexto(6)" >
+                <p>APP Mathias Contabilida</p>
+                <div class="subtexto" id="subtexto-6">We are specialists in this field
+                    with over 100 experiments.
+                </div>
             </div>
         </div>
     </section>
@@ -100,7 +123,62 @@
 
 
 
-    <script src="js/jquery.js"></script>
-    <script src="js/functions.js"></script>
+    <script>
+   
+   let subtextoAtivo = null;
+
+        function mostrarSubtexto(num) {
+            // Esconder subtexto anterior, se houver
+            if (subtextoAtivo) {
+                subtextoAtivo.style.opacity = '0';
+            }
+
+            // Mostrar o novo subtexto
+            const novoSubtexto = document.getElementById(`subtexto-${num}`);
+            if (subtextoAtivo !== novoSubtexto) {
+                novoSubtexto.style.opacity = '100';
+                subtextoAtivo = novoSubtexto;
+            } else {
+                // Se o subtexto clicado já está ativo, esconda-o
+                subtextoAtivo = null;
+            }
+        }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   //     var boxes = document.querySelectorAll('.boxservico')
+
+    //     function selectbox(){
+    //         boxes.forEach((box)=>
+    //             box.classList.remove('ativo')
+    //     )
+    //         this.classList.add('ativo')
+    //     }
+
+    //     boxes.forEach((box)=>
+    //         box.addEventListener('click', selectbox)
+    // )
+
+    </script>
+
+
+    <!-- <script src="js/jquery.js"></script> -->
+    <!-- <script src="js/functions.js"></script> -->
 </body>
 </html>

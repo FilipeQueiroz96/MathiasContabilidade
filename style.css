@@ -149,7 +149,7 @@ main{
 
 
 .sessaoservicos{
-    background-image: url(imagens/fundopreto.jpeg);
+    background-image: url(imagens/fundopreto2.jpg);
     padding-bottom: 500px;
     padding-left: 7%;
     padding-right: 7%;
@@ -157,31 +157,46 @@ main{
 
 .tituloservicos{
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding-top: 70px;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
     font-weight: 500;
     font-size: 26px;
     margin-bottom: 80px;
     border-bottom: 1px solid white;
 }
 
-
-
-
-.areaservicos{
-    display: flex;
-    justify-content: space-between;
-}
-.areaservicos>div>p{
-    color: white;
-}
-
-.boxservico{
+.elemento{
     width: 200px;
     cursor: pointer;
 }
-span{
+
+.areaservicos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+.elemento{
+    margin: 20px 12% 10px 12%;
+}
+.areaservicos>div>p{
     color: white;
-    display: none;
+    background-color: rgb(131, 131, 131);
+    height: 60px;
+    width: 220px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subtexto{
+    margin-top: 5px;
+    padding-left: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition-duration: 1s;
 }

@@ -1,13 +1,19 @@
 $(function(){
+    
+    
+    var show = $('.areaservicos>div>span');
 
+$('.boxservico1').click(function(){
+    $('.popup1').fadeIn();
+})
 
 $('.areaservicos>div').click(function(){
-    $('.popup').fadeIn();
+    $('.popup1').fadeOut();
 })
 
-$('main').click(function(){
-    $('.popup').fadeOut();
-})
+if(show.style.display == 'block'){
+    console.log('ta block')
+}
 
 
 
