@@ -42,10 +42,10 @@ nav{
     display: flex;
     align-items: center;
 }
-.logo-icone{
+.logo-icone1{
     height: 65px;
 }
-.logo-texto{
+.logo-texto1{
     width: 150px;
 }
 
@@ -56,9 +56,10 @@ nav{
 .titulo1{
     margin-top: 120px;
     color: white;
-    padding-left: 10%;
-    max-width: 400px;
+    padding-left: 8%;
+    max-width: 600px;
     text-align: center;
+    font-size: 50px;
 }
 
 .p1{
@@ -118,6 +119,7 @@ main{
     padding: 20px 20% 0 12%;
     font-size: 14px;
     font-weight: 500;
+    text-align: justify;
 }
 
 .sessaofoto{
@@ -129,7 +131,7 @@ main{
 }
 
 .imgandre{
-    width: 300px;
+    width: 320px;
 }
 
 .nome{
@@ -150,7 +152,7 @@ main{
 
 .sessaoservicos{
     background-image: url(imagens/fundopreto2.jpg);
-    padding-bottom: 500px;
+    padding-bottom: 70px;
     padding-left: 7%;
     padding-right: 7%;
 }
@@ -162,41 +164,129 @@ main{
     padding-top: 70px;
     padding-bottom: 18px;
     font-weight: 500;
-    font-size: 26px;
-    margin-bottom: 80px;
+    font-size: 30px;
+    margin-bottom: 60px;
     border-bottom: 1px solid white;
-}
-
-.elemento{
-    width: 200px;
-    cursor: pointer;
 }
 
 .areaservicos{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+
 }
 .elemento{
-    margin: 20px 12% 10px 12%;
+    margin: 15px 6% 15px 6%;
+    max-width: 360px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 28px;
 }
 .areaservicos>div>p{
-    color: white;
-    background-color: rgb(131, 131, 131);
-    height: 60px;
-    width: 220px;
-    border-radius: 30px;
+    color: black;
+    padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-weight: 600;
 }
 
 .subtexto{
-    margin-top: 5px;
-    padding-left: 12px;
+    padding:10px;
+    color: rgb(0, 0, 0);
     text-align: center;
-    color: rgb(255, 255, 255);
-    opacity: 0;
     transition-duration: 1s;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+.titulolocal{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    font-size: 30;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 10px;
+}
+
+.divmapa{
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.divmapa > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.sessaocontato{
+    background-image: url(imagens/fundopreto2.jpg);
+}
+
+.logos2{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.logo-icone2{
+    height: 100px;
+}
+
+.logo-texto2{
+    height: 120px;
+}
+
+.divcontato{
+    background-color: rgb(230, 230, 230);
+    margin: 20px 13% 0 13%;
+    padding: 50px;
+    padding-bottom: 30px;
+}
+
+.divcontato>p{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+}
+.divcontato>p>svg{
+    margin-right: 15px;
+    
+}
+
+
+.botoes{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-bottom: 50px;
+}
+
+.botoes>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 20px;
+    border-radius: 41px;
+
 }
