@@ -453,7 +453,7 @@ main{
         text-align: center;
         transition-duration: 1s;
         font-weight: 500;
-        display:none
+        display:block;
     }
 
 
@@ -471,7 +471,7 @@ main{
     .divcontato>p{
         margin-bottom: 20px;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
     }
     .divcontato>p>svg{
         margin-right: 15px;
