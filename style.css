@@ -7,10 +7,92 @@
 }
 
 
+/* --------------------  MENU MOBILE --------------------- */
+
+.botao-menu{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    color: white;
+}
+.menu-mobile{
+    background-color: rgb(43, 42, 42);
+    justify-content: right;
+    position: fixed;
+    top: 32px;
+    right: 0px;
+    z-index: 999;
+    width: 0%;
+    padding-bottom: 20px;
+    transition: .4s;
+}
+.x{
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.menu-mobile>ul{
+    list-style-type: none;
+    text-align: right;
+    padding-right: 7px;
+}
+.menu-mobile>ul>li{
+    margin-bottom: 15px;
+}
+.menu-mobile>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-mobile.abrir-menu{
+    width: 60%;
+}
+.botao-menu{
+    cursor: pointer;
+    top: 28px;
+    right:15px;
+}
+
+/* --------------------------  MENU MOBILE FIM  --------------------------*/
+
+
+
+
+
+
+.whatsapp-mobile{
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    align-items: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transition-duration: 0.2s;
+}
+.linkwhatsapp-mobile{
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 50%;
+}
+.wappicon-mobile{
+    z-index: 99999;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+
+
+
+
+
 
 header{
     background-image: url(imagens/fundo-certificado.jpeg);
-    background-size: cover;
+    background-size:cover;
+    background-position: right;
     padding-top: 20px;
 }
 
@@ -36,6 +118,21 @@ nav{
 .menu-nav>li>a{
     text-decoration: none;
     color: white;
+    font-weight: 600;
+}
+
+.areacliente{
+    background-color: rgb(139, 139, 139);
+    padding: 14px;
+    border-radius: 20px;
+}
+.menu-nav>li>svg{
+    color: white;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 10px;
 }
 
 .logos{
@@ -57,9 +154,9 @@ nav{
     margin-top: 120px;
     color: white;
     padding-left: 8%;
-    max-width: 600px;
+    max-width: 500px;
     text-align: center;
-    font-size: 50px;
+    font-size: 42px;
 }
 
 .p1{
@@ -70,9 +167,6 @@ nav{
     max-width: 500px;
     padding-bottom: 100px;
 }
-
-
-
 
 
 .doisbotoes{
@@ -96,6 +190,8 @@ nav{
     border-radius: 36px;
     background-color: rgb(87, 87, 87);
 }
+
+
 
 
 
@@ -264,7 +360,6 @@ main{
     font-size: 19px;
     display: flex;
     align-items: center;
-    margin-left: 8%;
 }
 .divcontato>p>svg{
     margin-right: 15px;
@@ -288,5 +383,100 @@ main{
     background-color: black;
     padding: 20px;
     border-radius: 41px;
+}
+
+
+@media screen and (max-width: 1100px){
+
+    header{
+        background-image: url(imagens/fundo-certificado-2.jpg);
+    }
+    .logos{
+        margin: auto;
+    }
+    .fundomobile{
+        height: 500px;
+        position: absolute;
+        right: 0px;
+    }
+
+    .botao-menu{
+        display: block;
+        position: fixed;
+    }
+    .menu-nav{
+        display: none;
+    }
+
+
+
+
+
+    .sobrenos{
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 250px;
+        max-width: none;
+        border-bottom: 2.5px solid rgb(0, 0, 0);
+    }
+    .sessaofoto{
+        position: absolute;
+        left:30%;
+    }
+    
+    .imgandre{
+        width: 180px;
+    }
+    
+    .sobrep1, .sobrep2, .sobrep3, .sobrep4{
+        padding: 40px 6% 0 6%;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: justify;
+        margin-bottom: -12px;
+    }
+
+
+
+
+    .areaservicos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .subtexto{
+        padding:10px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        transition-duration: 1s;
+        font-weight: 500;
+        display:none
+    }
+
+
+
+
+
+
+    .divcontato{
+        background-color: rgb(230, 230, 230);
+        margin: 20px 13% 0 13%;
+        padding: 50px;
+        padding-bottom: 30px;
+    }
+    
+    .divcontato>p{
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .divcontato>p>svg{
+        margin-right: 15px;
+        
+    }
+
 
 }
