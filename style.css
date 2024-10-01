@@ -5,7 +5,9 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 /* --------------------  MENU MOBILE --------------------- */
 
@@ -177,12 +179,13 @@ nav{
 
 .saibacomo{
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(0, 0, 0);
     margin-right: 30px;
     padding: 20px 25px 20px 25px;
     border-radius: 37px;
     background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.692);
 }
 
 .whatsapp{
@@ -191,6 +194,7 @@ nav{
     padding: 20px 25px 20px 25px;
     border-radius: 36px;
     background-color: rgb(87, 87, 87);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
 }
 
 
@@ -266,6 +270,10 @@ main{
     border-bottom: 1px solid white;
 }
 
+.toque{
+    display: none;
+}
+
 .areaservicos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -331,6 +339,7 @@ main{
 
 .sessaocontato{
     background-image: url(imagens/fundopreto2.jpg);
+    padding-bottom: 30px;
 }
 
 .logos2{
@@ -375,7 +384,7 @@ main{
     gap: 20px;
     margin-left: 13%;
     margin-right: 13%;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .botoes>a{
@@ -394,6 +403,9 @@ main{
         background-position: right;
         padding-top: 0;
     }
+    nav{
+        padding: 0 0 0 0;
+    }
     .logos{
         margin: auto;
     }
@@ -406,6 +418,8 @@ main{
     .botao-menu{
         display: block;
         position: fixed;
+        background-color: rgba(0, 0, 0, 0.507);
+        border-radius: 12px;
     }
     .menu-nav{
         display: none;
@@ -442,19 +456,23 @@ main{
     .saibacomo{
         text-decoration: none;
         color: rgb(0, 0, 0);
-        margin-right: 30px;
-        padding: 20px 25px 20px 25px;
+        margin-right: 12px;
+        padding: 15px 20px 15px 20px;
         border-radius: 37px;
         background-color: rgb(255, 255, 255);
+        font-size: 15px;
         }
 
     .whatsapp{
         text-decoration: none;
         color: white;
-        padding: 20px 25px 20px 25px;
+        font-weight: 600;
+        padding: 15px 20px 15px 20px;
         border-radius: 36px;
         background-color: rgb(87, 87, 87);
+        font-size: 16px;
         }
+
 
 
 
@@ -471,11 +489,14 @@ main{
     }
     .sessaofoto{
         position: absolute;
-        left:30%;
+        margin-top: 180px;
+        left: 50%;
+        transform:translate(-50%, -50%)
     }
     
     .imgandre{
         width: 180px;
+        
     }
     
     .sobrep1, .sobrep2, .sobrep3, .sobrep4{
@@ -489,22 +510,45 @@ main{
 
 
 
+
+
     .areaservicos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
         justify-items: center;
     }
+    .toque{
+        display: block;
+        color: rgb(214, 214, 214);
+        font-size: 13px;
+        margin:-20px 0 10px 0;
+        text-align: center;
+    }
 
+    .elemento{
+        margin: 8px 6% 8px 6%;
+        max-width: 360px;
+        background-color: rgb(230, 230, 230);
+        border-radius: 28px;
+    }
     .subtexto{
         padding:10px;
         color: rgb(0, 0, 0);
         text-align: center;
         transition-duration: 1s;
         font-weight: 500;
-        display:block;
+        display:none;
     }
 
-
+    
+    .areaservicos>div>p{
+        color: black;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        font-weight: 600;
+    }
 
 
 
@@ -534,6 +578,25 @@ main{
         padding-bottom: 80px;
     }
     
+    .logos2{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        align-items: center;
+        margin-left: -11px;
+    }
+    
+    .logo-icone2{
+        height: 80px;
+    }
+    
+    .logo-texto2{
+        height: 100px;
+    }
+
+
+
+
     .botoes{
         background-color: rgb(241, 241, 241);
         display: flex;
@@ -542,14 +605,26 @@ main{
         margin-left: 5%;
         margin-right: 5%;
         margin-top: -2px;
-        padding-bottom: 80px;
     }
     
     .botoes>a{
         text-decoration: none;
         color: rgb(255, 255, 255);
         background-color: black;
-        padding: 20px;
+        padding: 15px;
         border-radius: 41px;
     }
+
+
+
+
+
+    .whatsapp-mobile{
+        bottom: 6px;
+        right: 5px;
+    }
+    .linkwhatsapp-mobile{
+        padding: 6px;
+    }
+    
 }
